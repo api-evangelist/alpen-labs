@@ -1,0 +1,4 @@
+Contact: https://github.com/alpenlabs/alpen/issues
+Expires: 2025-12-31T23:59:00.000Z
+Preferred-Languages: en
+Canonical: https://www.alpenlabs.io/.well-known/security.txt

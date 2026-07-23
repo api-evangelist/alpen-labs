@@ -1,0 +1,20 @@
+# Alpen
+
+## Alpen Docs
+
+- [Introduction to Alpen](https://docs.alpenlabs.io/welcome/readme.md)
+- [Get started](https://docs.alpenlabs.io/welcome/get-started.md)
+- [Wallet setup](https://docs.alpenlabs.io/welcome/wallet-setup.md)
+- [Using the Alpen CLI](https://docs.alpenlabs.io/welcome/using-the-alpen-cli.md)
+- [System architecture](https://docs.alpenlabs.io/how-alpen-works/system-architecture.md)
+- [Alpen design rationale](https://docs.alpenlabs.io/how-alpen-works/strata-design-rationale.md)
+- [Transaction lifecycle](https://docs.alpenlabs.io/how-alpen-works/transaction-lifecycle.md)
+- [Bitcoin bridge](https://docs.alpenlabs.io/how-alpen-works/bitcoin-bridge.md)
+- [Comparing Alpen and Ethereum](https://docs.alpenlabs.io/how-alpen-works/comparing-strata-and-ethereum.md)
+- [Specifications](https://docs.alpenlabs.io/how-alpen-works/specifications.md)
+- [Deploying Alpen smart contracts](https://docs.alpenlabs.io/build-alpen-apps/deploying-alpen-smart-contracts.md)
+- [RPC endpoints](https://docs.alpenlabs.io/build-alpen-apps/rpc-endpoints.md)
+- [Troubleshooting](https://docs.alpenlabs.io/build-alpen-apps/troubleshooting.md)
+- [Hardware requirements for Alpen full nodes](https://docs.alpenlabs.io/running-an-alpen-node/hardware-requirements-for-alpen-full-nodes.md)
+- [Alpen full node operator guide](https://docs.alpenlabs.io/running-an-alpen-node/alpen-full-node-operator-guide.md)
+- [Security](https://docs.alpenlabs.io/community/security.md)

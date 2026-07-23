@@ -1,0 +1,57 @@
+generated: '2026-07-17'
+method: searched
+source: https://docs.alpenlabs.io/welcome/using-the-alpen-cli
+name: alpen
+description: >-
+  First-party Rust command-line wallet and bridge tool for the Alpen Testnet. Manages a
+  BIP39 wallet, requests testnet funds from the faucet, and performs signet <-> Alpen
+  bridge deposits and withdrawals.
+language: rust
+repository: https://github.com/alpenlabs/alpen
+install:
+- method: cargo
+  command: cargo install --git https://github.com/alpenlabs/alpen --branch releases/0.2.0 alpen-cli@0.2.0 --locked --force
+  prerequisites:
+  - Cargo (via Rustup)
+  - "Linux: C/C++ compiler with libssl and development libraries"
+commands:
+- name: config
+  summary: Show the location of the CLI configuration file (config.toml)
+- name: faucet
+  summary: Request testnet BTC from the PoW faucet (e.g. alpen faucet signet)
+- name: deposit
+  summary: Transfer 10 BTC from signet to Alpen (bridge deposit)
+- name: withdraw
+  summary: Move 10 BTC from Alpen back to signet (bridge withdraw)
+- name: balance
+  summary: Display wallet balances (alpen balance [signet|alpen])
+- name: receive
+  summary: Generate wallet addresses
+- name: send
+  summary: Transfer BTC between addresses
+- name: drain
+  summary: Send all funds to specified addresses
+- name: recover
+  summary: Restore failed deposit transactions
+- name: scan
+  summary: Index signet wallet for restored seeds
+- name: backup
+  summary: Export a BIP39 mnemonic for wallet recovery
+- name: change-password
+  summary: Update the wallet encryption password
+- name: reset
+  summary: Wipe all local data
+- name: debug
+  summary: Developer utilities
+key_flows:
+- name: getting-started
+  steps:
+  - alpen config
+  - "edit config.toml to set endpoints"
+  - alpen faucet signet
+- name: bridge-deposit
+  steps:
+  - alpen deposit
+- name: bridge-withdraw
+  steps:
+  - alpen withdraw

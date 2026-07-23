@@ -1,14 +1,32 @@
 aid: alpen-labs
 name: Alpen Labs
-description: 'Alpen Labs is a company surfaced as a portfolio company of ribbit-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Alpen Labs is a Bitcoin infrastructure company building Alpen (formerly Strata), an
+  EVM-compatible zero-knowledge validity rollup on Bitcoin that lets developers deploy
+  standard Solidity smart contracts and applications settled to the Bitcoin base layer.
+  The developer surface is a public JSON-RPC interface: an Ethereum-compatible full node
+  exposing standard eth_* methods, twenty-five Strata-specific strata_* methods, and an
+  ERC-4337 account-abstraction bundler (EIP-7769). Developers get a testnet (chain ID
+  8150, Signet BTC), a PoW faucet, a block/checkpoint explorer, and the first-party Rust
+  alpen CLI for wallet, deposit, withdraw and bridge operations. Backed by Ribbit Capital.
 url: https://raw.githubusercontent.com/api-evangelist/alpen-labs/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/67cfca80708eb505376820af/68401b6ec3fbeab26b54650f_OpenGAlpen.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - ribbit-capital
-x-tier: stub
+x-tier: enriched
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
@@ -16,9 +34,68 @@ modified: '2026-07-17'
 tags:
 - Company
 - Crypto
-apis: []
+- Bitcoin
+- Blockchain
+- Rollup
+- Zero-Knowledge
+- EVM
+- JSON-RPC
+- Web3
+- Smart Contracts
+apis:
+- name: Alpen Testnet JSON-RPC
+  description: >-
+    Alpen's public JSON-RPC interface exposed by the full node and bundler on the Alpen
+    Testnet (chain ID 8150, Signet BTC). Supports standard Ethereum eth_* methods,
+    twenty-five Strata-specific strata_* methods (protocol status, checkpoints, deposits,
+    chainstate, sync), and ERC-4337 account-abstraction methods on the bundler.
+  humanURL: https://docs.alpenlabs.io/build-alpen-apps/rpc-endpoints
+  baseURL: https://rpc.testnet.alpenlabs.io
+  properties:
+  - type: APIReference
+    url: https://docs.alpenlabs.io/build-alpen-apps/rpc-endpoints
+  - type: GettingStarted
+    url: https://docs.alpenlabs.io/welcome/get-started
+common:
+- type: DeveloperPortal
+  url: https://docs.alpenlabs.io/
+- type: Documentation
+  url: https://docs.alpenlabs.io/
+- type: APIReference
+  url: https://docs.alpenlabs.io/build-alpen-apps/rpc-endpoints
+- type: GettingStarted
+  url: https://docs.alpenlabs.io/welcome/get-started
+- type: GitHubOrganization
+  url: https://github.com/alpenlabs
+- type: Blog
+  url: https://www.alpenlabs.io/blog
+- type: Support
+  url: https://github.com/alpenlabs/alpen/issues
+- type: Security
+  url: https://docs.alpenlabs.io/community/security
+- type: LLMsTxt
+  url: llms/alpen-labs-llms.txt
+- type: WellKnown
+  url: well-known/alpen-labs-well-known.yml
+- type: SecurityTxt
+  url: well-known/alpen-labs-security.txt
+- type: CLI
+  url: cli/alpen-labs-cli.yml
+- type: Sandbox
+  url: sandbox/alpen-labs-sandbox.yml
+- type: Conformance
+  url: conformance/alpen-labs-conformance.yml
+- type: DomainSecurity
+  url: security/alpen-labs-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/alpen-labs-vulnerability-disclosure.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

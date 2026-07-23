@@ -1,0 +1,34 @@
+generated: '2026-07-17'
+method: searched
+source: https://docs.alpenlabs.io/welcome/get-started
+summary: >-
+  Alpen ships a public testnet as its sandbox. There is no production/mainnet developer
+  surface yet (mainnet v1 contracts are under active audit); all documented endpoints are
+  testnet. Value on the network is Signet BTC (sBTC), obtained from a public PoW faucet,
+  so no live funds are at risk.
+network:
+  name: Alpen Testnet
+  chain_id: 8150
+  currency: Signet BTC (sBTC)
+  evm_compatible: true
+  wallets:
+  - MetaMask
+  - Enkrypt
+  - Frame
+  note: >-
+    The testnet recently underwent a network regenesis implementing the Prague spec,
+    resetting all previous state and accounts.
+endpoints:
+  rpc: https://rpc.testnet.alpenlabs.io
+  bundler: https://bundler.testnet.alpenlabs.io
+  faucet: https://faucet.testnet.alpenlabs.io/
+  explorer: https://explorer.testnet.alpenlabs.io/
+test_funds:
+  faucet:
+    type: PoW faucet
+    url: https://faucet.testnet.alpenlabs.io/
+    cli: alpen faucet signet
+    asset: Signet BTC
+  bridge:
+    deposit_amount: 10 BTC (signet -> Alpen)
+    withdraw_amount: 10 BTC (Alpen -> signet)

@@ -1,0 +1,21 @@
+generated: '2026-07-17'
+method: searched
+source: https://www.alpenlabs.io/.well-known/
+host: https://www.alpenlabs.io
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  file: alpen-labs-security.txt
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  Only RFC 9116 security.txt is published. Note the security.txt Contact points to
+  GitHub issues and its Expires date (2025-12-31) has lapsed; the maintained security
+  contact (security@alpenlabs.io) and Immunefi bug bounty are documented on the docs
+  security page (see security/alpen-labs-vulnerability-disclosure.yml).
