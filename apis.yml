@@ -10,6 +10,17 @@ description: >-
   8150, Signet BTC), a PoW faucet, a block/checkpoint explorer, and the first-party Rust
   alpen CLI for wallet, deposit, withdraw and bridge operations. Backed by Ribbit Capital.
 url: https://raw.githubusercontent.com/api-evangelist/alpen-labs/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
