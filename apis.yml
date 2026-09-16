@@ -1,14 +1,12 @@
 aid: alpen-labs
 name: Alpen Labs
-description: >-
-  Alpen Labs is a Bitcoin infrastructure company building Alpen (formerly Strata), an
-  EVM-compatible zero-knowledge validity rollup on Bitcoin that lets developers deploy
-  standard Solidity smart contracts and applications settled to the Bitcoin base layer.
-  The developer surface is a public JSON-RPC interface: an Ethereum-compatible full node
-  exposing standard eth_* methods, twenty-five Strata-specific strata_* methods, and an
-  ERC-4337 account-abstraction bundler (EIP-7769). Developers get a testnet (chain ID
-  8150, Signet BTC), a PoW faucet, a block/checkpoint explorer, and the first-party Rust
-  alpen CLI for wallet, deposit, withdraw and bridge operations. Backed by Ribbit Capital.
+description: 'Alpen Labs is a Bitcoin infrastructure company building Alpen (formerly Strata), an EVM-compatible
+  zero-knowledge validity rollup on Bitcoin that lets developers deploy standard Solidity smart contracts
+  and applications settled to the Bitcoin base layer. The developer surface is a public JSON-RPC interface:
+  an Ethereum-compatible full node exposing standard eth_* methods, twenty-five Strata-specific strata_*
+  methods, and an ERC-4337 account-abstraction bundler (EIP-7769). Developers get a testnet (chain ID
+  8150, Signet BTC), a PoW faucet, a block/checkpoint explorer, and the first-party Rust alpen CLI for
+  wallet, deposit, withdraw and bridge operations. Backed by Ribbit Capital.'
 url: https://raw.githubusercontent.com/api-evangelist/alpen-labs/refs/heads/main/apis.yml
 deliveryModel:
   model: unknown
@@ -41,7 +39,7 @@ x-tier: enriched
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-09-16'
 tags:
 - Company
 - Crypto
@@ -66,11 +64,10 @@ tags_raw:
 - Smart Contracts
 apis:
 - name: Alpen Testnet JSON-RPC
-  description: >-
-    Alpen's public JSON-RPC interface exposed by the full node and bundler on the Alpen
-    Testnet (chain ID 8150, Signet BTC). Supports standard Ethereum eth_* methods,
-    twenty-five Strata-specific strata_* methods (protocol status, checkpoints, deposits,
-    chainstate, sync), and ERC-4337 account-abstraction methods on the bundler.
+  description: Alpen's public JSON-RPC interface exposed by the full node and bundler on the Alpen Testnet
+    (chain ID 8150, Signet BTC). Supports standard Ethereum eth_* methods, twenty-five Strata-specific
+    strata_* methods (protocol status, checkpoints, deposits, chainstate, sync), and ERC-4337 account-abstraction
+    methods on the bundler.
   humanURL: https://docs.alpenlabs.io/build-alpen-apps/rpc-endpoints
   baseURL: https://rpc.testnet.alpenlabs.io
   properties:
@@ -79,6 +76,8 @@ apis:
   - type: GettingStarted
     url: https://docs.alpenlabs.io/welcome/get-started
 common:
+- type: Website
+  url: https://alpenlabs.io
 - type: DeveloperPortal
   url: https://docs.alpenlabs.io/
 - type: Documentation
